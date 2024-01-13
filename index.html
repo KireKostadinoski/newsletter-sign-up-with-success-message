@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="signup-form" id="sign-up">
+        <div class="input">
+
+            <div class="title">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000 product menagers recieving monthly on:</p>
+            </div>
+
+            <div class="list">
+                <div>
+                    <img src="./images/icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </div>
+                <div>
+                    <img src="./images/icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+                <div>
+                    <img src="./images/icon-list.svg" alt="">
+                    <p>And much more!</p>
+                </div>
+            </div>
+
+            <div class="inp-btn">
+
+                <div class="label-error">
+                    <label for="">Email adress</label>
+                    <p for="" id="error"></p>
+                </div>
+                <input type="email" id="email">
+                <button type="submit" id="submitBtn" onclick="submit()">Subscribe to monthly newsletter</button>
+
+            </div>
+
+
+
+
+
+        </div>
+        <div class="image">
+            <img src="./images/illustration-sign-up-desktop.svg" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="success" id="success">
+        <img src="./images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+            A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscribtion.
+        </p>
+
+        <button type="button" id="dismissBtn">Dismiss message</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
