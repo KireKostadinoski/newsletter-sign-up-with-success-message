@@ -4,6 +4,7 @@ const emailInput = document.getElementById('email');
 const submitButton = document.getElementById('submitBtn');
 const dismissButton = document.getElementById('dismissBtn');
 const error = document.getElementById('error');
+const emailSent = document.getElementById('emailSent');
 const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 function submit() {
@@ -14,6 +15,7 @@ function submit() {
     } else if (emailRegEx.test(emailInput.value)) {
         signUp.style.display = "none";
         success.style.display = "flex";
+        emailSent.innerHTML = emailInput.value
     } else {
         return error.innerHTML = "Invalid email address",
          emailInput.style.backgroundColor = 'rgba(240, 18, 66, 0.232)';
